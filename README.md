@@ -1,9 +1,8 @@
-Project-Tsunami Cafe
+<h1>Project-Tsunami Cafe</h1>
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Tsunami Coffee Website</title>
 </head>
 
 <body>
