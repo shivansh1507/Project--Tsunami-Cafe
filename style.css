@@ -13,33 +13,45 @@ body {
 
 .main {
   height: 30rem;
-  padding-top: 1rem;
+  padding-top: 0; 
   background-image: url('https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png');
-  background-position:centre;
-  
+  background-size: cover; 
 }
 
 .main img {
   width: 15rem;
   display: block;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
-nav {
-  background-color: OrangeRed;
-  color: White;
-  padding: 0.75rem 1.25rem;
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 69, 0);
+  padding: 0.75rem 0;
+}
+
+.welcome-text {
+  font-weight: bold;
+  color: white;
+  margin-left: 1rem; 
 }
 
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 li {
-  display: inline-block;
+  margin-right: 1rem;
+  color: white;
 }
+
 
 .supporting,
 .rating,
@@ -47,19 +59,39 @@ li {
 .location {
   margin: 4em auto;
 }
-
-.supporting {
+.container.supporting {
+  margin: 4em auto; 
+  padding: 2em;
   display: flex;
   align-items: flex-start;
-  padding: 0 1rem;
 }
 
-.supporting img {
-width: 10%;
-height: 10%;
-margin-right: 5%;
-
+.container.supporting img {
+  width: 10%;
+  height: 10%;
+  margin-right: 5%;
 }
+
+.description {
+  flex: 1; 
+}
+
+.nav-container a {
+  text-decoration: none;  
+   color: white; 
+  transition: color 0.3s; 
+}
+
+.nav-container a:hover {
+  color: orange; 
+}
+
+@media only screen and (max-width: 700px) {
+  footer nav {
+    display: none;
+  }
+}
+
 
 .rating {
   background-color: OrangeRed;
