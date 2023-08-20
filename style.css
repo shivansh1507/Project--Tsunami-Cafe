@@ -135,7 +135,7 @@ footer {
 footer .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 5em 0;
   color: white;
 }
